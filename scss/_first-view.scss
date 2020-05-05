@@ -1,0 +1,24 @@
+.first-view {
+    height: 880px;
+    width: 100vw;
+    background: $theme;
+    display: grid;
+    grid-template-rows: 90px 630px 1fr;
+    grid-template-columns: 420px 1fr;
+    grid-template-areas:
+    "menu    image"
+    "logo    image"
+    "logo    .....";
+    &_menu-bar {
+        background: lightblue;
+        grid-area: menu;
+    }
+    &_image-slider {
+        background: pink;
+        grid-area: image;
+    }
+    &_logo {
+        background: yellow;
+        grid-area: logo;
+    }
+}
