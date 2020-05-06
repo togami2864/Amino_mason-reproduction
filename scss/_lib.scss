@@ -36,3 +36,54 @@ $theme: rgb(242,243,244);
         @content;
     }
 }
+
+////////////////
+//  component //
+////////////////
+
+.btn {
+    height: 90px;
+    &-menu {
+        width: 90px;
+        background-color: white;
+        padding-top: 30px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: 'Raleway', sans-serif;
+    }
+    &-store {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        background-color: black;
+        color: white;
+        max-width: 100%;
+        padding: 30px 10px;
+        font-size: 2.0rem;
+        transition: .25s;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 33px;
+            right: 40px;
+            background-image: url(../img/arrow.svg) ;
+            width: 16px;
+            height: 16px;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.line {
+    display: block;
+    background-color: black;
+    width: 28%;
+    height: 3px;
+    margin: 5px auto;
+}
+img {
+    width: 100%;
+    overflow: hidden;
+}

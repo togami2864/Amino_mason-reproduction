@@ -10,15 +10,31 @@
     "logo    image"
     "logo    .....";
     &_menu-bar {
-        background: lightblue;
         grid-area: menu;
+        display: flex;
+        align-items: center;
+        &_store {
+            width: 330px;
+        }
     }
     &_image-slider {
         background: pink;
         grid-area: image;
+        .image-slider_container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .slide {
+                opacity: 0;
+                position: absolute;
+                
+            }
+        }
     }
     &_logo {
-        background: yellow;
         grid-area: logo;
+        margin: 150px auto 0;
+        width: 300px;
+        height: 500px;
     }
 }
