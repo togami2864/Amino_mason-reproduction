@@ -1,4 +1,55 @@
 .instagram {
-    background: lightyellow;
-    height: 2000px;
+    height: 1950px;
+    &_pictures {
+        height: 1500px;
+        margin: 70px 90px 0;
+        display: grid;
+        grid-template-rows: 485px 485px 485px;
+        grid-template-columns: 485px 485px 485px;
+        grid-template-areas: 
+        "cell-0 cell-3 cell-6"
+        "cell-1 cell-4 cell-7"
+        "cell-2 cell-5 cell-8";
+        .picture-0{
+            grid-area: cell-0;
+            margin:0 10px 10px 0;
+        }
+        .picture-1{
+            grid-area: cell-1;
+            margin:0 10px 10px 0;
+        }
+        .picture-2{
+            grid-area: cell-2;
+            margin:0 10px 10px 0;
+        }
+        .picture-3{
+            grid-area: cell-3;
+            margin:0 10px 10px 0;
+        }
+        .picture-4{
+            grid-area: cell-4;
+            margin:0 10px 10px 0;
+        }
+        .picture-5{
+            grid-area: cell-5;
+            margin:0 10px 10px 0;
+        }
+        .picture-6{
+            grid-area: cell-6;
+            margin:0 10px 10px 0;
+        }
+        .picture-7{
+            grid-area: cell-7;
+            margin:0 10px 10px 0;
+        }
+        .picture-8{
+            grid-area: cell-8;
+            margin:0 10px 10px 0;
+        }
+    }
+    &_text {
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 100px 90px 130px;
+    }
 }

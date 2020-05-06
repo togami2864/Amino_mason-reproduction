@@ -214,6 +214,78 @@ img {
   text-align: center;
 }
 
+.btn_share {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+}
+
+.btn_share-twitter {
+  background-image: url(../img/social_twitter.svg);
+}
+
+.btn_share-instagram {
+  background-image: url(../img/social_instagram.svg);
+  margin-right: 10px;
+}
+
+.share {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.share .share-text {
+  font-size: 2.6rem;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.btn_mini {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  background: black;
+  fill: white;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.btn_mini .cosme, .btn_mini .rakuten {
+  width: 75px;
+  height: 30px;
+}
+
+.nav-menu {
+  font-size: 2.8rem;
+}
+
+.nav-products h1 {
+  font-size: 2.8rem;
+}
+
+.nav-products p {
+  font-size: 2.2rem;
+}
+
+.nav-products p::before {
+  display: inline-block;
+  content: "";
+  width: 7px;
+  height: 2px;
+  background: black;
+  margin: 0 5px 6px 0;
+}
+
 .first-view {
   height: 880px;
   width: 100vw;
@@ -293,7 +365,7 @@ img {
 }
 
 .product {
-  height: 1950px;
+  height: 1750px;
   padding-top: 60px;
   position: relative;
 }
@@ -372,12 +444,169 @@ img {
 }
 
 .instagram {
-  background: lightyellow;
-  height: 2000px;
+  height: 1950px;
+}
+
+.instagram_pictures {
+  height: 1500px;
+  margin: 70px 90px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 485px 485px 485px;
+      grid-template-rows: 485px 485px 485px;
+  -ms-grid-columns: 485px 485px 485px;
+      grid-template-columns: 485px 485px 485px;
+      grid-template-areas: "cell-0 cell-3 cell-6" "cell-1 cell-4 cell-7" "cell-2 cell-5 cell-8";
+}
+
+.instagram_pictures .picture-0 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cell-0;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cell-1;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cell-2;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cell-3;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cell-4;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cell-5;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cell-6;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cell-7;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_pictures .picture-8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: cell-8;
+  margin: 0 10px 10px 0;
+}
+
+.instagram_text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 100px 90px 130px;
 }
 
 .footer {
-  background: red;
+  background: #f2f3f4;
   height: 330px;
+}
+
+.footer_wrap {
+  margin: 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 365px;
+  height: 325px;
+}
+
+.footer-right {
+  font-family: "Fjalla One", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+}
+
+.footer_share {
+  margin-top: 80px;
+}
+
+.footer_address {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.footer_copyright {
+  font-size: 1.0rem;
+}
+
+.footer_nav-products {
+  margin-bottom: 30px;
+}
+
+.footer_nav-store {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer_nav-store h1 {
+  font-size: 2.2rem;
+}
+
+.footer_sub-menu {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 275px;
+  right: -2px;
 }
 /*# sourceMappingURL=main.css.map */

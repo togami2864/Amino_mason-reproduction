@@ -123,3 +123,68 @@ $gray: #7B7D81;
     padding: 60px 80px;
     text-align: center;
 }
+
+.btn_share {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+    &-twitter {
+        background-image: url(../img/social_twitter.svg);
+    }
+    &-instagram {
+        background-image: url(../img/social_instagram.svg);
+        margin-right: 10px;
+    }
+}
+
+.share {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    .share-text {
+        font-size: 2.6rem;
+        font-family:"Fjalla One", sans-serif;
+    }
+}
+
+.btn_mini {
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    background: black;
+    fill: white;
+    margin: 5px 0;
+    padding: 10px;
+    .cosme,.rakuten {
+        width: 75px;
+        height: 30px;
+    }
+}
+.nav {
+    &-menu {
+        font-size: 2.8rem;
+    }
+    &-products {
+        h1 {
+            font-size: 2.8rem;
+        }
+        p {
+            font-size: 2.2rem;
+            &::before {
+                display: inline-block;
+                content: "";
+                width: 7px;
+                height: 2px;
+                background: black;
+                margin:0 5px 6px 0;
+            }
+        }
+    }
+}
+    
